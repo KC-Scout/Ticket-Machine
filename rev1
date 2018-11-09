@@ -1,0 +1,28 @@
+print('\n7-5')
+subtotal = []
+while True:
+    age = input('Please enter age')
+    if age == 'finished':
+        break
+    age = int(age)
+    if age < 3:
+        price = 0
+    elif age <=12:
+        price = 10
+    else:
+        price = 12
+    subtotal.append(price)
+    print('Your ticket price is:' + str(price))
+    add_l = input('Would you like another ticket?')
+    print(add_l)
+    if add_l == 'y':
+        continue
+    elif add_l == 'n':
+        break
+    elif add_l == 'subtotal':
+        print('Your subtotal is: ' + str(sum(subtotal)))
+        cont = input('Would you like to continue?')
+        if cont != 'n':
+            continue
+    else:
+        print('Not a valid input')
