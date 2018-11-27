@@ -6,11 +6,11 @@ while True:
         break
     age = int(age)
     if age < 3:
-        price = 0
+        price = 5
     elif age <=12:
-        price = 10
+        price = 15
     else:
-        price = 12
+        price = 20
     subtotal.append(price)
     print('Your ticket price is:' + str(price))
     add_l = input('Would you like another ticket?')
